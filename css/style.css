@@ -1,0 +1,21 @@
+/* 
+    Document   : style.css
+    Created on : Jul 28, 2013, 12:11:32 PM
+    Author     : mike
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+#content{
+    width:960px;
+ 
+}
+#search{
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+}
