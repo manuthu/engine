@@ -1,0 +1,38 @@
+{
+    "id": 1,
+    "guid": "16802611-72c6-42ab-9418-acdf9bd1452a",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "name": "Madeline Turner",
+    "gender": "male",
+    "company": "Genland",
+    "phone": "819-562-2541",
+    "email": "madeline@genland.com",
+    "address": "33224, FortLauderdale, Walker Street",
+    "about": "Hendrerit esse aliquip enim dignissim esse, delenit in vulputate ex at, in dolor euismod consectetuer. Dolore, praesent lobortis lorem veniam duis, consectetuer sit consequat tincidunt consequat, feugait hendrerit vel. Minim vulputate, vel diam nostrud in magna, iriure enim esse sit consectetuer, tation ut. Iriure consequat aliquip, praesent nostrud quis suscipit ullamcorper, commodo luptatum duis et nulla, molestie. Suscipit ex augue dolore, esse exerci dolore diam ullamcorper, vero in feugiat hendrerit et, duis dignissim vel vulputate.",
+    "registered": "1995-01-15T21:44:51 -01:00",
+    "tags": [
+        "amet",
+        "eu",
+        "iriure",
+        "te",
+        "minim",
+        "nonummy",
+        "velit"
+    ],
+    "friends": [
+        {
+            "id": 1,
+            "name": "Olivia Harrison"
+        },
+        {
+            "id": 2,
+            "name": "Emily Gibbs"
+        },
+        {
+            "id": 3,
+            "name": "Riley Timmons"
+        }
+    ]
+},
+id, guid, picture, age, name, gender, company, phone, email, address, about, registered, tags, friends
