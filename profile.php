@@ -19,7 +19,6 @@ if (isset($_GET['id'])) {
     });
 
     // 2. Rank and dispay
-
     if (count($profile_data) < 1) {
         echo '<p> No data <p>';
     } else {
@@ -93,48 +92,6 @@ function _execute($sql, $params){
         throw $error;
     }        
 
-}
-
-function rank_user($profile) {
-
-    // 1.
-
-    //Get the user  ranking if none exists
-    $filename = "/home/mike/Projects/search-engine/refugee-united/data/person.json";
-    $data = get_data($filename);
-    $id = $profile["id"];
-    // Get the profile ranking
-    $profile_data = array_filter($data, function($val) use ($id) {
-        return $val['id'] == $id;
-    });
-    echo 'Profle data: ' . $profile_data[0]['hits'] . '<br/>';
-
-    if (count($profile_data) < 1) {
-        echo 'No profile. Create';
-        //Create a new ranking
-        $rank = array(
-            'id' => $id,
-            'hits' => 1
-        );
-
-    }else{
-        //Update the hits
-        echo 'Update';
-        $rank = array(
-            'id' => $id,
-            'hits' => $profile_data[0]['hits'] +1,
-        );
-
-
-    }
-    $new_array = $data + $rank;
-    $putdata = array(
-        'result' => $new_array,
-    );
-    //var_dump($putdata);
-    //Write the data back to file
-    $content = implode('\n',$putdata);
-    file_put_contents($filename, content);
 }
 
 function display_profile($profile_data) {
