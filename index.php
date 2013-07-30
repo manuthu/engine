@@ -13,11 +13,6 @@
                         <input type="text" name="search"/>
                         <input type="submit" value="Search"/>
                     </div>
-                    <?php if(isset($_GET['page'])){
-                        if($_GET['page']=='results'){
-                            echo 'data!';
-                        }
-                    } ?>
                 </form>
             </div>            
         </div>
